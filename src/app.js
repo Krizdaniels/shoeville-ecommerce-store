@@ -1,16 +1,4 @@
 const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello, Shoeville Store!');
-});
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
-
-const express = require('express');
 const userRouter = require('./routers/user');
 const itemRouter = require('./routers/item');
 const cartRouter = require('./routers/cart');
