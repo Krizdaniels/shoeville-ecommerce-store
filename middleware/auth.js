@@ -1,4 +1,4 @@
-import { verify } from 'jsonwebtoken'
+const { verify } = require('jsonwebtoken');
 import { findOne } from '../models/user'
 const auth = async(req, res, next) => {
 try {
